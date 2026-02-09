@@ -1,14 +1,17 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from './pages/Login'
+import Dashboard from './pages/dashboad/Dashboard'
 
-
-import { Button } from '@/components/ui/button'
-
-export function App() {
+const App: React.FC = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="font-medium">Hello World</div>
-      <Button>Click me</Button>
-    </div>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={ <Login/>} />
+      <Route path="/dashboard" element= { <Dashboard/>} />
 
-export default App
+    </Routes>
+  );
+};
+
+export default App;
