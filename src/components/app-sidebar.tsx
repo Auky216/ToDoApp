@@ -117,12 +117,12 @@ const data = {
   ],
   projects: [
     {
-      name: "Design Engineering",
+      name: "Mi dia",
       url: "#",
       icon: Frame,
     },
     {
-      name: "Sales & Marketing",
+      name: "Importantes",
       url: "#",
       icon: PieChart,
     },
